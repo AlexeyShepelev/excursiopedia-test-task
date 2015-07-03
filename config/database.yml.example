@@ -1,0 +1,12 @@
+development: &default
+  adapter: mysql2
+  encoding: utf8
+  database: excursiopedia_test_task_development
+
+test:
+  <<: *default
+  database: excursiopedia_test_task_test
+
+production:
+  <<: *default
+  database: excursiopedia_test_task
