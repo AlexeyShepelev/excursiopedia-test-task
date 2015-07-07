@@ -16,6 +16,7 @@ gem 'jquery-rails'
 # Admin
 gem 'activeadmin', '~> 1.0.0.pre1'
 gem 'globalize', '~> 5.0.0'
+gem 'paper_trail', '~> 4.0.0.rc'
 
 # Authentication and authorization
 gem 'devise'

@@ -1,4 +1,5 @@
 class Excursion < ActiveRecord::Base
+  has_paper_trail
   translates :title, :description
 
   belongs_to :city

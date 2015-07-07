@@ -49,6 +49,21 @@ ActiveAdmin.register Excursion do
       row :created_at
       row :updated_at
     end
+
+    panel 'Log' do
+      table_for excursion.versions do
+        column :event
+        column :user do |version|
+          User.find(version.whodunnit).email if version.whodunnit.present?
+        end
+        column :changes do |version|
+          version.changeset
+        end
+        column :created_at do |version|
+          l(version.created_at)
+        end
+      end
+    end
   end
 
   controller do
