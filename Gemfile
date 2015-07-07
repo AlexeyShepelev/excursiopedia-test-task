@@ -15,6 +15,7 @@ gem 'jquery-rails'
 
 # Admin
 gem 'activeadmin', '~> 1.0.0.pre1'
+gem 'globalize', '~> 5.0.0'
 
 # Authentication and authorization
 gem 'devise'

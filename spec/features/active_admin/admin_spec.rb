@@ -7,9 +7,11 @@ feature 'Admin' do
   let(:user_attrs) { attributes_for :user }
   let!(:user) { create :user }
 
-  scenario "Can't create new user without password" do
+  before do
     admin_authenticate(admin)
+  end
 
+  scenario "Can't create new user without password" do
     click_link 'Users'
     click_link 'New User'
 
@@ -21,8 +23,6 @@ feature 'Admin' do
   end
 
   scenario 'Update user without password' do
-    admin_authenticate(admin)
-
     visit_user_edit_admin_page(user)
 
     find('#user_role').find("option[value='#{UserRole::MODERATOR}']").select_option
@@ -33,8 +33,6 @@ feature 'Admin' do
   end
 
   scenario 'Update user password' do
-    admin_authenticate(admin)
-
     visit_user_edit_admin_page(user)
 
     fill_in 'user_password', with: user_attrs[:password]
