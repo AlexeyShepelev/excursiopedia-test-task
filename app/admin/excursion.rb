@@ -8,29 +8,26 @@ ActiveAdmin.register Excursion do
   filter :created_at
   filter :updated_at
 
-  index do |object|
+  index do
     selectable_column
     id_column
     column :title
-
-    if can?(:manage, object)
-      column :city
-      column :category_excursions do |excursion|
-        has_many_to_links(excursion, :category_excursions)
-      end
-      column :published
-      column :created_at
-      column :updated_at
+    column :city
+    column :category_excursions do |excursion|
+      has_many_to_links(excursion, :category_excursions)
     end
+    column :published
+    column :created_at
+    column :updated_at
     actions
   end
 
   form do |f|
     f.inputs do
-      f.input :title, input_html: { disabled: cannot?(:manage, f.object) }
+      f.input :title, input_html: { disabled: cannot?([:create, :edit], f.object) }
       f.input :description
 
-      if can?(:manage, f.object)
+      if can?([:create, :edit], f.object)
         f.input :city
         f.input :category_excursions, multiple: true, include_blank: true, input_html: { size: 5 }
         f.input :published
@@ -39,27 +36,24 @@ ActiveAdmin.register Excursion do
     f.actions
   end
 
-  show do |object|
+  show do
     attributes_table do
       row :id
       row :title
       row :description
-
-      if can?(:manage, object)
-        row :city
-        row :category_excursions do |excursion|
-          has_many_to_links(excursion, :category_excursions)
-        end
-        row :published
-        row :created_at
-        row :updated_at
+      row :city
+      row :category_excursions do |excursion|
+        has_many_to_links(excursion, :category_excursions)
       end
+      row :published
+      row :created_at
+      row :updated_at
     end
   end
 
   controller do
     def update
-      params[:excursion].slice!(:description) if cannot?(:manage, Excursion)
+      params[:excursion].slice!(:description) if can?(:translate, Excursion)
       super
     end
   end

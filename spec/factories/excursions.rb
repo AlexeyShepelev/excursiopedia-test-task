@@ -14,5 +14,9 @@ FactoryGirl.define do
         excursion.category_excursions << create_list(:category_excursion, evaluator.categories_count)
       end
     end
+
+    factory :undescribed_excursion do
+      description ''
+    end
   end
 end

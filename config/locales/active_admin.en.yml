@@ -1,0 +1,6 @@
+en:
+  active_admin:
+    filling_excursions:
+      page_title: 'Filling Excursions'
+      message: "We don't have any unscripted excursions."
+      action: 'Please, contact your manager'

@@ -28,25 +28,6 @@ feature 'Moderator' do
   describe 'Excursions' do
     let!(:excursion) { create :excursion_with_categories }
 
-    scenario 'Visibility on index page' do
-      selector = "#excursion_#{excursion.id}"
-
-      visit admin_excursions_path
-      expect(all("#{selector} td").count).to eq(4)
-      expect(find(selector)).to have_selector('.col-id')
-      expect(find(selector)).to have_selector('.col-title')
-    end
-
-    scenario 'Visibility on show page' do
-      selector = "#attributes_table_excursion_#{excursion.id}"
-
-      visit admin_excursion_path(excursion)
-      expect(all("#{selector} tr").count).to eq(3)
-      expect(find(selector)).to have_selector('.row-id')
-      expect(find(selector)).to have_selector('.row-title')
-      expect(find(selector)).to have_selector('.row-description')
-    end
-
     scenario 'Visibility on edit page' do
       visit edit_admin_excursion_path(excursion)
       expect(all('#edit_excursion li.input').count).to eq(2)
