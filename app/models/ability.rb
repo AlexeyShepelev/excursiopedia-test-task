@@ -13,6 +13,7 @@ class Ability
   def moderator
     user
     can :read, ActiveAdmin::Page, name: 'Dashboard'
+    can [:read, :update], Excursion
   end
 
   def user

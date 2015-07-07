@@ -24,4 +24,13 @@ feature 'Admin' do
   scenario 'Access success for Category Excursion page' do
     access_success_for_page('Category Excursions', admin_category_excursions_path)
   end
+
+  describe 'Excursions' do
+    let!(:excursion) { create :excursion_with_categories }
+
+    scenario 'Visibility on edit page' do
+      visit edit_admin_excursion_path(excursion)
+      expect(find('#edit_excursion')).to have_selector("#excursion_title:not([disabled='disabled'])")
+    end
+  end
 end
