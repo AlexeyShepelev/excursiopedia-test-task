@@ -1,0 +1,7 @@
+%table.table.table-striped{id: "city_#{city.id}"}
+  %thead
+    %tr
+      %th
+        = link_to(city.name, city)
+  %tbody
+    = render partial: 'excursion_row', collection: city.limited_excursions, as: :excursion

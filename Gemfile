@@ -11,7 +11,9 @@ gem 'mysql2'
 # Assets
 gem 'haml'
 gem 'rabl'
+gem 'less-rails'
 gem 'jquery-rails'
+gem 'twitter-bootstrap-rails'
 
 # Admin
 gem 'activeadmin', '~> 1.0.0.pre1'
@@ -22,12 +24,14 @@ gem 'paper_trail', '~> 4.0.0.rc'
 gem 'devise'
 gem 'cancancan', '~> 1.10'
 
+# Settings
+gem 'settingslogic'
+
 group :assets do
   gem 'uglifier', '>= 1.3.0'
   gem 'sass-rails', '~> 5.0.0'
   gem 'coffee-rails', '~> 4.0.0'
   gem 'therubyracer', platforms: :ruby
-  gem 'twitter-bootstrap-rails'
 end
 
 group :development do

@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   root 'cities#index'
+
+  resources :cities, only: [:index, :show]
+  resources :excursions, only: :show
 end

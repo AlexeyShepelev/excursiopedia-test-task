@@ -1,0 +1,13 @@
+
+defaults: &defaults
+  cities:
+    excursions_limit: 5
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

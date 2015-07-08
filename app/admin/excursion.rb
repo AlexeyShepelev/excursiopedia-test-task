@@ -68,7 +68,7 @@ ActiveAdmin.register Excursion do
 
   controller do
     def update
-      params[:excursion].slice!(:description) if can?(:translate, Excursion)
+      params[:excursion].slice!(:description) if can?(:translate, Excursion) && cannot?(:manage, Excursion)
       super
     end
   end

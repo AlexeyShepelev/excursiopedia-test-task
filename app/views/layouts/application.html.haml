@@ -1,9 +1,38 @@
 !!!
-%html
+%html{lang: 'en'}
   %head
-    %title ExcursiopediaTestTask
-    = stylesheet_link_tag    'application', media: 'all'
-    = javascript_include_tag 'application'
+    %meta{charset: 'utf-8'}
+    %meta{content: 'IE=Edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}
+    %meta{content: 'width=device-width, initial-scale=1.0', name: 'viewport'}
+    %title= content_for?(:title) ? yield(:title) : 'Excursiopedia TestTask'
     = csrf_meta_tags
+
+    /[if lt IE 9]
+      <script src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js' type='text/javascript'></script>
+
+    = stylesheet_link_tag 'application', media: 'all'
+
+    = favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', rel: 'apple-touch-icon-precomposed', type: 'image/png', sizes: '144x144'
+    = favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', rel: 'apple-touch-icon-precomposed', type: 'image/png', sizes: '114x114'
+    = favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', rel: 'apple-touch-icon-precomposed', type: 'image/png', sizes: '72x72'
+    = favicon_link_tag 'apple-touch-icon-precomposed.png', rel: 'apple-touch-icon-precomposed', type: 'image/png'
+    = favicon_link_tag 'favicon.ico', rel: 'shortcut icon'
+
+    = javascript_include_tag 'application'
+
   %body
-    = yield
+
+    .navbar.navbar-default.navbar-static-top
+      .container
+        %button.navbar-toggle{'data-target' => '.navbar-responsive-collapse', 'data-toggle' => 'collapse', type: 'button'}
+          %span.icon-bar
+        = link_to('Excursiopedia TestTask', root_path, class: 'navbar-brand')
+
+    .container
+      .row
+        .col-lg-9
+          = bootstrap_flash
+          = yield
+
+        .col-lg-3
+          = yield(:sidebar)
