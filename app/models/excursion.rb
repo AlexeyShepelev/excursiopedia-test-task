@@ -6,4 +6,6 @@ class Excursion < ActiveRecord::Base
   has_and_belongs_to_many :category_excursions
 
   scope :undescribed, -> { with_translations.where(description: ['', nil]) }
+
+  alias_attribute :name, :title
 end

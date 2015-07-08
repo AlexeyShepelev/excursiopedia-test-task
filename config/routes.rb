@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   resources :cities, only: [:index, :show]
   resources :excursions, only: :show
+  resources :category_excursions, only: :show
 end

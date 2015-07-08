@@ -1,0 +1,10 @@
+%table.table.table-striped{id: "#{object.class.name.underscore}_#{object.id}"}
+  %thead
+    %tr
+      %th
+        = link_to(object.name, object)
+  %tbody
+    - object.send(association_method).each do |sub_object|
+      %tr
+        %td
+          = link_to(sub_object.name, sub_object)
