@@ -22,3 +22,5 @@
 en:
   cities:
     title: 'Cities'
+  category_excursion:
+    title: 'Category Excursion'

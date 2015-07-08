@@ -8,14 +8,16 @@ feature 'City' do
 
   describe 'Index page' do
     scenario 'View cities list' do
+      list_limit = Settings.cities.excursions_limit
+
       city_1, city_2, city_3 = create_list(:city, 3)
-      excursions_1 = create_list(:excursion_with_categories, 9, city: city_1)
-      excursions_2 = create_list(:excursion_with_categories, 2, city: city_2)
+      create_list(:excursion_with_categories, 9, city: city_1)
+      create_list(:excursion_with_categories, 2, city: city_2)
 
       visit cities_path
 
-      expect_data_in_table("#city_presenter_#{city_1.id}", city_1, excursions_1)
-      expect_data_in_table("#city_presenter_#{city_2.id}", city_2, excursions_2)
+      expect_data_in_table("#city_presenter_#{city_1.id}", city_1, :excursions, limit: list_limit)
+      expect_data_in_table("#city_presenter_#{city_2.id}", city_2, :excursions, limit: list_limit)
 
       expect(page).to have_no_content(city_3.name)
     end
@@ -42,7 +44,7 @@ feature 'City' do
       visit city_path(city)
 
       excursions.each do |excursion|
-        expect_data_in_table("#excursion_#{excursion.id}", excursion, excursion.category_excursions)
+        expect_data_in_table("#excursion_#{excursion.id}", excursion, :category_excursions)
       end
     end
 

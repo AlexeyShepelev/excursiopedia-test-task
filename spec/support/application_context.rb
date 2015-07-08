@@ -1,8 +1,12 @@
 shared_context :application do
 
-  def expect_data_in_table(selector, main_object, child_objects)
-    list_limit = Settings.cities.excursions_limit
+  # The option limit = 10 show not more than 10 child objects. For example:
+  #
+  #  expect_data_in_table('#table', city, :excursions, limit: 10)
+  def expect_data_in_table(selector, main_object, association_method, options = {})
+    child_objects = main_object.send(association_method)
     children_count = child_objects.count
+    list_limit = options[:limit] || children_count
 
     table = find(selector)
     expect(table.all('tbody tr').count).to eq([children_count, list_limit].min)
