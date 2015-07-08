@@ -1,6 +1,32 @@
 - content_for :sidebar do
   .well.sidebar-nav
-    %h3 Sidebar
+    %h3= t('history.title')
     %ul.nav.nav-list
-      %li.nav-header Sidebar
+      %li.nav-header= t('history.viewed')
       %li= link_to "Link1", "/path1"
+
+.page-header
+  %h1= t('excursion.page_title')
+%dl.dl-horizontal
+  %dt
+    %strong
+      = t('excursion.title')
+      \:
+  %dd= @excursion.title
+  %dt
+    %strong
+      = t('excursion.description')
+      \:
+  %dd= @excursion.description
+  %dt
+    %strong
+      = t('excursion.city')
+      \:
+  %dd= @excursion.city.name
+  %dt
+    %strong
+      = t('excursion.categories')
+      \:
+  %dd
+    - @excursion.category_excursions.each do |category|
+      = link_to(category.name, category)

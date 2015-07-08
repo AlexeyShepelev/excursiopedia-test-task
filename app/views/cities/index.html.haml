@@ -1,4 +1,4 @@
 .page-header
-  %h1= t('cities.title')
+  %h1= t('cities.page_title')
 
 = render partial: 'table', collection: @cities, as: :object, locals: { association_method: :limited_excursions }

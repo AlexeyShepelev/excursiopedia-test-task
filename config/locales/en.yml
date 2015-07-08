@@ -21,6 +21,15 @@
 
 en:
   cities:
-    title: 'Cities'
+    page_title: 'Cities'
   category_excursion:
-    title: 'Category Excursion'
+    page_title: 'Category Excursion'
+  excursion:
+    page_title: 'Excursion'
+    title: 'Title'
+    description: 'Description'
+    city: 'City'
+    categories: 'Categories'
+  history:
+    title: 'History'
+    viewed: 'Last viewed'
