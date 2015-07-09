@@ -21,4 +21,12 @@ feature 'Category Excursion' do
 
     expect(page.current_path).to eq(excursion_path(excursion))
   end
+
+  scenario "Don't show unpublished excursion" do
+    unpublished_excursion = create(:unpublished_excursion)
+    category.excursions << unpublished_excursion
+
+    visit current_path
+    expect(page).to have_no_link(unpublished_excursion.title, excursion_path(unpublished_excursion))
+  end
 end

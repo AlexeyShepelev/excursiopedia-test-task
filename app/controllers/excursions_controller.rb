@@ -1,5 +1,5 @@
 class ExcursionsController < ApplicationController
   def show
-    @excursion = Excursion.find(params[:id])
+    @excursion = Excursion.includes(category_excursions: :translations).find(params[:id])
   end
 end

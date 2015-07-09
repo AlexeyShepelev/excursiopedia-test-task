@@ -10,9 +10,10 @@ feature 'City' do
     scenario 'View cities list' do
       list_limit = Settings.cities.excursions_limit
 
-      city_1, city_2, city_3 = create_list(:city, 3)
+      city_1, city_2, city_3, city_4 = create_list(:city, 4)
       create_list(:excursion_with_categories, 9, city: city_1)
       create_list(:excursion_with_categories, 2, city: city_2)
+      create_list(:unpublished_excursion, 3, city: city_3)
 
       visit cities_path
 
@@ -20,6 +21,7 @@ feature 'City' do
       expect_data_in_table("#city_presenter_#{city_2.id}", city_2, :excursions, limit: list_limit)
 
       expect(page).to have_no_content(city_3.name)
+      expect(page).to have_no_content(city_4.name)
     end
 
     scenario 'Click excursion link' do
@@ -40,11 +42,16 @@ feature 'City' do
   describe 'Show page' do
     scenario 'View city' do
       excursions = create_list(:excursion_with_categories, 9, city: city)
+      unpublished_excursions = create_list(:unpublished_excursion, 2, city: city)
 
       visit city_path(city)
 
-      excursions.each do |excursion|
-        expect_data_in_table("#excursion_#{excursion.id}", excursion, :category_excursions)
+      excursions.each do |exc|
+        expect_data_in_table("#excursion_#{exc.id}", exc, :category_excursions)
+      end
+
+      unpublished_excursions.each do |exc|
+        expect(page).to have_no_content(exc.title)
       end
     end
 

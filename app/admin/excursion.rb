@@ -67,6 +67,10 @@ ActiveAdmin.register Excursion do
   end
 
   controller do
+    def scoped_collection
+      super.unscoped
+    end
+
     def update
       params[:excursion].slice!(:description) if can?(:translate, Excursion) && cannot?(:manage, Excursion)
       super

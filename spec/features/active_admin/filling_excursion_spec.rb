@@ -5,6 +5,7 @@ feature 'Filling Excursion' do
 
   let(:moderator) { create :moderator }
   let!(:excursions) { create_list(:undescribed_excursion, 5) }
+  let!(:unpublished_excursions) { create_list(:undescribed_unpublished_excursion, 2) }
 
   before do
     admin_authenticate(moderator)
@@ -16,7 +17,7 @@ feature 'Filling Excursion' do
   end
 
   scenario 'Filling excursions usage' do
-    excursions.each do |excursion|
+    (excursions + unpublished_excursions).each do |excursion|
       expect(page).to have_selector("form[action='#{admin_filling_excursion_path(excursion)}']")
 
       fill_in 'excursion_description', with: 'Description'

@@ -17,6 +17,14 @@ FactoryGirl.define do
 
     factory :undescribed_excursion do
       description ''
+
+      factory :undescribed_unpublished_excursion do
+        published false
+      end
+    end
+
+    factory :unpublished_excursion do
+      published false
     end
   end
 end

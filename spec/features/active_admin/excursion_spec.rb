@@ -5,6 +5,7 @@ feature 'Excursion' do
 
   let(:admin) { create :admin }
   let!(:excursion) { create :excursion_with_categories }
+  let!(:unpublished_excursion) { create :unpublished_excursion }
 
   before do
     admin_authenticate(admin)
@@ -34,5 +35,10 @@ feature 'Excursion' do
       expect(row).to have_content(I18n.l(version.created_at))
       expect(row).to send(version.whodunnit ? :have_content : :have_no_content, admin.email)
     end
+  end
+
+  scenario 'Show unpublished excursions' do
+    visit admin_excursions_path
+    expect(page).to have_content(unpublished_excursion.title)
   end
 end

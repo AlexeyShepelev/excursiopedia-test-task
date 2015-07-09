@@ -16,8 +16,12 @@ ActiveAdmin.register Excursion, as: 'FillingExcursions' do
   end
 
   controller do
+    def scoped_collection
+      super.unscoped
+    end
+
     def index
-      excursion = Excursion.undescribed.first
+      excursion = Excursion.unscoped.undescribed.first
       if excursion
         redirect_to edit_admin_filling_excursion_path(excursion)
       else
