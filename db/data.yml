@@ -1,0 +1,931 @@
+
+---
+category_excursion_translations:
+  columns:
+  - id
+  - category_excursion_id
+  - locale
+  - created_at
+  - updated_at
+  - name
+  records: 
+  - - 1
+    - 1
+    - en
+    - 2015-07-10 07:28:05.000000000 Z
+    - 2015-07-10 07:28:05.000000000 Z
+    - Adventure Tours
+  - - 2
+    - 2
+    - en
+    - 2015-07-10 07:28:17.000000000 Z
+    - 2015-07-10 07:28:17.000000000 Z
+    - Sightseeing
+  - - 3
+    - 3
+    - en
+    - 2015-07-10 07:28:30.000000000 Z
+    - 2015-07-10 07:28:30.000000000 Z
+    - Beach & Water-Sport Activities
+  - - 4
+    - 4
+    - en
+    - 2015-07-10 07:28:40.000000000 Z
+    - 2015-07-10 07:28:40.000000000 Z
+    - Golf
+  - - 5
+    - 5
+    - en
+    - 2015-07-10 07:28:52.000000000 Z
+    - 2015-07-10 07:28:52.000000000 Z
+    - Cuisine Tours
+  - - 6
+    - 6
+    - en
+    - 2015-07-10 07:29:05.000000000 Z
+    - 2015-07-10 07:29:05.000000000 Z
+    - Flightseeing
+
+---
+category_excursions:
+  columns:
+  - id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 2015-07-10 07:28:05.000000000 Z
+    - 2015-07-10 07:28:05.000000000 Z
+  - - 2
+    - 2015-07-10 07:28:17.000000000 Z
+    - 2015-07-10 07:28:17.000000000 Z
+  - - 3
+    - 2015-07-10 07:28:30.000000000 Z
+    - 2015-07-10 07:28:30.000000000 Z
+  - - 4
+    - 2015-07-10 07:28:40.000000000 Z
+    - 2015-07-10 07:28:40.000000000 Z
+  - - 5
+    - 2015-07-10 07:28:52.000000000 Z
+    - 2015-07-10 07:28:52.000000000 Z
+  - - 6
+    - 2015-07-10 07:29:05.000000000 Z
+    - 2015-07-10 07:29:05.000000000 Z
+
+---
+category_excursions_excursions:
+  columns:
+  - id
+  - excursion_id
+  - category_excursion_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - 1
+    - 2015-07-10 07:31:37.000000000 Z
+    - 2015-07-10 07:31:37.000000000 Z
+  - - 2
+    - 1
+    - 6
+    - 2015-07-10 07:31:37.000000000 Z
+    - 2015-07-10 07:31:37.000000000 Z
+  - - 3
+    - 2
+    - 4
+    - 2015-07-10 07:32:18.000000000 Z
+    - 2015-07-10 07:32:18.000000000 Z
+  - - 4
+    - 3
+    - 1
+    - 2015-07-10 07:32:50.000000000 Z
+    - 2015-07-10 07:32:50.000000000 Z
+  - - 5
+    - 3
+    - 6
+    - 2015-07-10 07:32:50.000000000 Z
+    - 2015-07-10 07:32:50.000000000 Z
+  - - 6
+    - 4
+    - 5
+    - 2015-07-10 07:33:26.000000000 Z
+    - 2015-07-10 07:33:26.000000000 Z
+  - - 7
+    - 5
+    - 5
+    - 2015-07-10 07:34:22.000000000 Z
+    - 2015-07-10 07:34:22.000000000 Z
+  - - 8
+    - 6
+    - 2
+    - 2015-07-10 07:34:47.000000000 Z
+    - 2015-07-10 07:34:47.000000000 Z
+  - - 9
+    - 7
+    - 2
+    - 2015-07-10 07:35:05.000000000 Z
+    - 2015-07-10 07:35:05.000000000 Z
+  - - 10
+    - 8
+    - 6
+    - 2015-07-10 07:35:55.000000000 Z
+    - 2015-07-10 07:35:55.000000000 Z
+  - - 11
+    - 9
+    - 5
+    - 2015-07-10 07:36:28.000000000 Z
+    - 2015-07-10 07:36:28.000000000 Z
+  - - 12
+    - 10
+    - 1
+    - 2015-07-10 07:36:59.000000000 Z
+    - 2015-07-10 07:36:59.000000000 Z
+  - - 13
+    - 11
+    - 1
+    - 2015-07-10 07:37:26.000000000 Z
+    - 2015-07-10 07:37:26.000000000 Z
+  - - 14
+    - 12
+    - 1
+    - 2015-07-10 07:37:45.000000000 Z
+    - 2015-07-10 07:37:45.000000000 Z
+
+---
+cities:
+  columns:
+  - id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 2015-07-10 07:24:49.000000000 Z
+    - 2015-07-10 07:24:49.000000000 Z
+  - - 2
+    - 2015-07-10 07:25:01.000000000 Z
+    - 2015-07-10 07:25:01.000000000 Z
+  - - 3
+    - 2015-07-10 07:25:10.000000000 Z
+    - 2015-07-10 07:25:10.000000000 Z
+  - - 4
+    - 2015-07-10 07:25:19.000000000 Z
+    - 2015-07-10 07:25:19.000000000 Z
+
+---
+city_translations:
+  columns:
+  - id
+  - city_id
+  - locale
+  - created_at
+  - updated_at
+  - name
+  records: 
+  - - 1
+    - 1
+    - en
+    - 2015-07-10 07:24:49.000000000 Z
+    - 2015-07-10 07:24:49.000000000 Z
+    - Berlin
+  - - 2
+    - 2
+    - en
+    - 2015-07-10 07:25:01.000000000 Z
+    - 2015-07-10 07:25:01.000000000 Z
+    - Moscow
+  - - 3
+    - 3
+    - en
+    - 2015-07-10 07:25:10.000000000 Z
+    - 2015-07-10 07:25:10.000000000 Z
+    - New York
+  - - 4
+    - 4
+    - en
+    - 2015-07-10 07:25:19.000000000 Z
+    - 2015-07-10 07:25:19.000000000 Z
+    - Minsk
+
+---
+excursion_translations:
+  columns:
+  - id
+  - excursion_id
+  - locale
+  - created_at
+  - updated_at
+  - title
+  - description
+  records: 
+  - - 1
+    - 1
+    - en
+    - 2015-07-10 07:31:37.000000000 Z
+    - 2015-07-10 07:38:50.000000000 Z
+    - Flightseeing in Germany
+    - Family owned and operated, Steve, our pilot from Sea Wind Tours, was born and
+      raised in Ketchikan so he knows the terrain and the area. What a wonderful plane
+      and sights we saw - beautiful. We highly recommend this company for a great
+      tour in comfort and safety.
+  - - 2
+    - 2
+    - en
+    - 2015-07-10 07:32:18.000000000 Z
+    - 2015-07-10 07:39:10.000000000 Z
+    - Golf
+    - Play the best of the world’s fairways, and pit your skills against all that
+      the elements can throw at you on one our our golf tours.
+  - - 3
+    - 3
+    - en
+    - 2015-07-10 07:32:50.000000000 Z
+    - 2015-07-10 07:39:39.000000000 Z
+    - Flightseeing in Russia
+    - Take a helicopter or light plane across landscapes including glaciers and ice
+      fields, national parks, waterfalls and see things in a new way. Some flight
+      seeing excursions also include adventure activities like fly fishing, wilderness
+      walks and dog sledding.
+  - - 4
+    - 4
+    - en
+    - 2015-07-10 07:33:26.000000000 Z
+    - 2015-07-10 07:40:06.000000000 Z
+    - Cuisine Tours in Germany
+    - Taste what’s unique in the region, and discover some gorgeous local specialities.
+      With tours worldwide to culinary destinations ranging from the Mediterranean
+      to the Far East, you can sample something amazing.
+  - - 5
+    - 5
+    - en
+    - 2015-07-10 07:34:22.000000000 Z
+    - 2015-07-10 07:40:13.000000000 Z
+    - Cuisine Tours in Russia
+    - Taste what’s unique in the region, and discover some gorgeous local specialities.
+      With tours worldwide to culinary destinations ranging from the Mediterranean
+      to the Far East, you can sample something amazing.
+  - - 6
+    - 6
+    - en
+    - 2015-07-10 07:34:47.000000000 Z
+    - 2015-07-10 07:40:33.000000000 Z
+    - Sightseeing in Russia
+    - The best way to get under the skin of a place is to have a local show you around
+      – you can do just that, or strike out and explore places on your own. Either
+      way, you’ll make some lasting memories of wherever you visit.
+  - - 7
+    - 7
+    - en
+    - 2015-07-10 07:35:05.000000000 Z
+    - 2015-07-10 07:40:37.000000000 Z
+    - Sightseeing in Germany
+    - The best way to get under the skin of a place is to have a local show you around
+      – you can do just that, or strike out and explore places on your own. Either
+      way, you’ll make some lasting memories of wherever you visit.
+  - - 8
+    - 8
+    - en
+    - 2015-07-10 07:35:55.000000000 Z
+    - 2015-07-10 07:43:16.000000000 Z
+    - Flightseeing in the USA
+    - Take a helicopter or light plane across landscapes including glaciers and ice
+      fields, national parks, waterfalls and see things in a new way. Some flight
+      seeing excursions also include adventure activities like fly fishing, wilderness
+      walks and dog sledding.
+  - - 9
+    - 9
+    - en
+    - 2015-07-10 07:36:28.000000000 Z
+    - 2015-07-10 07:43:38.000000000 Z
+    - Cuisine Tours in the USA
+    - Taste what’s unique in the region, and discover some gorgeous local specialities.
+      With tours worldwide to culinary destinations ranging from the Mediterranean
+      to the Far East, you can sample something amazing.
+  - - 10
+    - 10
+    - en
+    - 2015-07-10 07:36:59.000000000 Z
+    - 2015-07-10 07:41:15.000000000 Z
+    - Adventure Tour 1 day
+    - Whatever flips your switch, you can get it full-on here – go horse riding, hiking
+      or mountain biking in wild and remote places, parasail, off-roading in a 4x4.
+  - - 11
+    - 11
+    - en
+    - 2015-07-10 07:37:26.000000000 Z
+    - 2015-07-10 07:41:20.000000000 Z
+    - Adventure Tour 1 week
+    - Whatever flips your switch, you can get it full-on here – go horse riding, hiking
+      or mountain biking in wild and remote places, parasail, off-roading in a 4x4.
+  - - 12
+    - 12
+    - en
+    - 2015-07-10 07:37:45.000000000 Z
+    - 2015-07-10 07:41:24.000000000 Z
+    - Adventure Tour 3 days
+    - Whatever flips your switch, you can get it full-on here – go horse riding, hiking
+      or mountain biking in wild and remote places, parasail, off-roading in a 4x4.
+
+---
+excursions:
+  columns:
+  - id
+  - published
+  - city_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - true
+    - 1
+    - 2015-07-10 07:31:37.000000000 Z
+    - 2015-07-10 07:38:49.000000000 Z
+  - - 2
+    - true
+    - 1
+    - 2015-07-10 07:32:18.000000000 Z
+    - 2015-07-10 07:39:10.000000000 Z
+  - - 3
+    - true
+    - 2
+    - 2015-07-10 07:32:50.000000000 Z
+    - 2015-07-10 07:39:39.000000000 Z
+  - - 4
+    - true
+    - 1
+    - 2015-07-10 07:33:26.000000000 Z
+    - 2015-07-10 07:40:06.000000000 Z
+  - - 5
+    - true
+    - 2
+    - 2015-07-10 07:34:22.000000000 Z
+    - 2015-07-10 07:40:13.000000000 Z
+  - - 6
+    - true
+    - 2
+    - 2015-07-10 07:34:47.000000000 Z
+    - 2015-07-10 07:40:32.000000000 Z
+  - - 7
+    - true
+    - 1
+    - 2015-07-10 07:35:05.000000000 Z
+    - 2015-07-10 07:40:37.000000000 Z
+  - - 8
+    - false
+    - 3
+    - 2015-07-10 07:35:55.000000000 Z
+    - 2015-07-10 07:43:16.000000000 Z
+  - - 9
+    - false
+    - 3
+    - 2015-07-10 07:36:28.000000000 Z
+    - 2015-07-10 07:43:37.000000000 Z
+  - - 10
+    - true
+    - 1
+    - 2015-07-10 07:36:59.000000000 Z
+    - 2015-07-10 07:41:15.000000000 Z
+  - - 11
+    - true
+    - 1
+    - 2015-07-10 07:37:26.000000000 Z
+    - 2015-07-10 07:41:20.000000000 Z
+  - - 12
+    - true
+    - 1
+    - 2015-07-10 07:37:45.000000000 Z
+    - 2015-07-10 07:41:24.000000000 Z
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - role
+  - reset_password_sent_at
+  - remember_created_at
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - admin@mail.com
+    - "$2a$10$1yyVjsP7Ftc3zm9qX.r2YuCYm2webkKCy3g/.SJv78Ys/glsO4oLC"
+    - 
+    - 2
+    - 
+    - 
+    - 2015-07-10 07:21:56.000000000 Z
+    - 2015-07-10 07:21:56.000000000 Z
+  - - 2
+    - moderator@mail.com
+    - "$2a$10$HmXqin.V.HCKUGVRVYodWeogU8OaaOl0Rbfa9ObFnBMbC3TlpLwmq"
+    - 
+    - 3
+    - 
+    - 
+    - 2015-07-10 07:22:18.000000000 Z
+    - 2015-07-10 07:22:18.000000000 Z
+  - - 3
+    - user@mail.com
+    - "$2a$10$hC6WhA06vD7D8CtMX98R1O1mQkVzMIW.g15djTHfsfJJzzgKoniae"
+    - 
+    - 1
+    - 
+    - 
+    - 2015-07-10 07:22:27.000000000 Z
+    - 2015-07-10 07:22:27.000000000 Z
+
+---
+versions:
+  columns:
+  - id
+  - item_type
+  - item_id
+  - event
+  - whodunnit
+  - object
+  - created_at
+  - object_changes
+  - transaction_id
+  records: 
+  - - 1
+    - Excursion
+    - 1
+    - create
+    - '1'
+    - 
+    - 2015-07-10 07:31:37.000000000 Z
+    - "---\ntitle:\n- \n- Flightseeing in Germany\ndescription:\n- \n- ''\ncity_id:\n-
+      \n- 1\npublished:\n- false\n- true\ncreated_at:\n- \n- &1 2015-07-10 07:31:37.264318000
+      Z\nupdated_at:\n- \n- *1\nid:\n- \n- 1\n"
+    - 1
+  - - 2
+    - Excursion
+    - 2
+    - create
+    - '1'
+    - 
+    - 2015-07-10 07:32:18.000000000 Z
+    - "---\ntitle:\n- \n- Golf\ndescription:\n- \n- ''\ncity_id:\n- \n- 1\npublished:\n-
+      false\n- true\ncreated_at:\n- \n- &1 2015-07-10 07:32:18.001407000 Z\nupdated_at:\n-
+      \n- *1\nid:\n- \n- 2\n"
+    - 2
+  - - 3
+    - Excursion
+    - 3
+    - create
+    - '1'
+    - 
+    - 2015-07-10 07:32:50.000000000 Z
+    - "---\ntitle:\n- \n- Flightseeing in Russia\ndescription:\n- \n- ''\ncity_id:\n-
+      \n- 2\npublished:\n- false\n- true\ncreated_at:\n- \n- &1 2015-07-10 07:32:50.412922000
+      Z\nupdated_at:\n- \n- *1\nid:\n- \n- 3\n"
+    - 3
+  - - 4
+    - Excursion
+    - 4
+    - create
+    - '1'
+    - 
+    - 2015-07-10 07:33:26.000000000 Z
+    - "---\ntitle:\n- \n- Cuisine Tours in Germany\ndescription:\n- \n- ''\ncity_id:\n-
+      \n- 1\npublished:\n- false\n- true\ncreated_at:\n- \n- &1 2015-07-10 07:33:26.792931000
+      Z\nupdated_at:\n- \n- *1\nid:\n- \n- 4\n"
+    - 4
+  - - 5
+    - Excursion
+    - 5
+    - create
+    - '1'
+    - 
+    - 2015-07-10 07:34:22.000000000 Z
+    - "---\ntitle:\n- \n- Cuisine Tours in Russia\ndescription:\n- \n- ''\ncity_id:\n-
+      \n- 2\npublished:\n- false\n- true\ncreated_at:\n- \n- &1 2015-07-10 07:34:22.586000000
+      Z\nupdated_at:\n- \n- *1\nid:\n- \n- 5\n"
+    - 5
+  - - 6
+    - Excursion
+    - 6
+    - create
+    - '1'
+    - 
+    - 2015-07-10 07:34:47.000000000 Z
+    - "---\ntitle:\n- \n- Sightseeing in Russia\ndescription:\n- \n- ''\ncity_id:\n-
+      \n- 2\npublished:\n- false\n- true\ncreated_at:\n- \n- &1 2015-07-10 07:34:47.657217000
+      Z\nupdated_at:\n- \n- *1\nid:\n- \n- 6\n"
+    - 6
+  - - 7
+    - Excursion
+    - 7
+    - create
+    - '1'
+    - 
+    - 2015-07-10 07:35:05.000000000 Z
+    - "---\ntitle:\n- \n- Sightseeing in Germany\ndescription:\n- \n- ''\npublished:\n-
+      false\n- true\ncreated_at:\n- \n- &1 2015-07-10 07:35:05.038076000 Z\nupdated_at:\n-
+      \n- *1\nid:\n- \n- 7\n"
+    - 7
+  - - 8
+    - Excursion
+    - 7
+    - update
+    - '1'
+    - "---\nid: 7\npublished: true\ncity_id: \ncreated_at: 2015-07-10 07:35:05.000000000
+      Z\nupdated_at: 2015-07-10 07:35:05.000000000 Z\ntitle: Sightseeing in Germany\ndescription:
+      ''\n"
+    - 2015-07-10 07:35:23.000000000 Z
+    - "---\ncity_id:\n- \n- 1\nupdated_at:\n- 2015-07-10 07:35:05.000000000 Z\n- 2015-07-10
+      07:35:23.232321000 Z\n"
+    - 8
+  - - 9
+    - Excursion
+    - 8
+    - create
+    - '1'
+    - 
+    - 2015-07-10 07:35:55.000000000 Z
+    - "---\ntitle:\n- \n- Flightseeing in the USA\ndescription:\n- \n- ''\ncity_id:\n-
+      \n- 3\ncreated_at:\n- \n- &1 2015-07-10 07:35:55.762721000 Z\nupdated_at:\n-
+      \n- *1\nid:\n- \n- 8\n"
+    - 9
+  - - 10
+    - Excursion
+    - 9
+    - create
+    - '1'
+    - 
+    - 2015-07-10 07:36:28.000000000 Z
+    - "---\ntitle:\n- \n- Cuisine Tours in the USA\ndescription:\n- \n- ''\ncity_id:\n-
+      \n- 3\ncreated_at:\n- \n- &1 2015-07-10 07:36:28.630639000 Z\nupdated_at:\n-
+      \n- *1\nid:\n- \n- 9\n"
+    - 10
+  - - 11
+    - Excursion
+    - 10
+    - create
+    - '1'
+    - 
+    - 2015-07-10 07:36:59.000000000 Z
+    - "---\ntitle:\n- \n- Adventure Tour 1 day\ndescription:\n- \n- ''\ncity_id:\n-
+      \n- 1\npublished:\n- false\n- true\ncreated_at:\n- \n- &1 2015-07-10 07:36:59.265618000
+      Z\nupdated_at:\n- \n- *1\nid:\n- \n- 10\n"
+    - 11
+  - - 12
+    - Excursion
+    - 11
+    - create
+    - '1'
+    - 
+    - 2015-07-10 07:37:26.000000000 Z
+    - "---\ntitle:\n- \n- Adventure Tour 1 week\ndescription:\n- \n- ''\ncity_id:\n-
+      \n- 1\npublished:\n- false\n- true\ncreated_at:\n- \n- &1 2015-07-10 07:37:26.093894000
+      Z\nupdated_at:\n- \n- *1\nid:\n- \n- 11\n"
+    - 12
+  - - 13
+    - Excursion
+    - 12
+    - create
+    - '1'
+    - 
+    - 2015-07-10 07:37:45.000000000 Z
+    - "---\ntitle:\n- \n- Adventure Tour 3 days\ndescription:\n- \n- ''\ncity_id:\n-
+      \n- 1\npublished:\n- false\n- true\ncreated_at:\n- \n- &1 2015-07-10 07:37:45.729186000
+      Z\nupdated_at:\n- \n- *1\nid:\n- \n- 12\n"
+    - 13
+  - - 14
+    - Excursion
+    - 1
+    - update
+    - '2'
+    - |
+      ---
+      id: 1
+      published: true
+      city_id: 1
+      created_at: 2015-07-10 07:31:37.000000000 Z
+      updated_at: 2015-07-10 07:31:37.000000000 Z
+      title: Flightseeing in Germany
+      description: Family owned and operated, Steve, our pilot from Sea Wind Tours, was
+        born and raised in Ketchikan so he knows the terrain and the area. What a wonderful
+        plane and sights we saw - beautiful. We highly recommend this company for a great
+        tour in comfort and safety.
+    - 2015-07-10 07:38:49.000000000 Z
+    - |
+      ---
+      description:
+      - ''
+      - Family owned and operated, Steve, our pilot from Sea Wind Tours, was born and raised
+        in Ketchikan so he knows the terrain and the area. What a wonderful plane and sights
+        we saw - beautiful. We highly recommend this company for a great tour in comfort
+        and safety.
+      updated_at:
+      - 2015-07-10 07:31:37.000000000 Z
+      - 2015-07-10 07:38:49.989096000 Z
+    - 14
+  - - 15
+    - Excursion
+    - 2
+    - update
+    - '2'
+    - |
+      ---
+      id: 2
+      published: true
+      city_id: 1
+      created_at: 2015-07-10 07:32:18.000000000 Z
+      updated_at: 2015-07-10 07:32:18.000000000 Z
+      title: Golf
+      description: Play the best of the world’s fairways, and pit your skills against all
+        that the elements can throw at you on one our our golf tours.
+    - 2015-07-10 07:39:10.000000000 Z
+    - |
+      ---
+      description:
+      - ''
+      - Play the best of the world’s fairways, and pit your skills against all that the
+        elements can throw at you on one our our golf tours.
+      updated_at:
+      - 2015-07-10 07:32:18.000000000 Z
+      - 2015-07-10 07:39:10.469645000 Z
+    - 15
+  - - 16
+    - Excursion
+    - 3
+    - update
+    - '2'
+    - |
+      ---
+      id: 3
+      published: true
+      city_id: 2
+      created_at: 2015-07-10 07:32:50.000000000 Z
+      updated_at: 2015-07-10 07:32:50.000000000 Z
+      title: Flightseeing in Russia
+      description: Take a helicopter or light plane across landscapes including glaciers
+        and ice fields, national parks, waterfalls and see things in a new way. Some flight
+        seeing excursions also include adventure activities like fly fishing, wilderness
+        walks and dog sledding.
+    - 2015-07-10 07:39:39.000000000 Z
+    - |
+      ---
+      description:
+      - ''
+      - Take a helicopter or light plane across landscapes including glaciers and ice fields,
+        national parks, waterfalls and see things in a new way. Some flight seeing excursions
+        also include adventure activities like fly fishing, wilderness walks and dog sledding.
+      updated_at:
+      - 2015-07-10 07:32:50.000000000 Z
+      - 2015-07-10 07:39:39.783010000 Z
+    - 16
+  - - 17
+    - Excursion
+    - 4
+    - update
+    - '2'
+    - |
+      ---
+      id: 4
+      published: true
+      city_id: 1
+      created_at: 2015-07-10 07:33:26.000000000 Z
+      updated_at: 2015-07-10 07:33:26.000000000 Z
+      title: Cuisine Tours in Germany
+      description: Taste what’s unique in the region, and discover some gorgeous local specialities.
+        With tours worldwide to culinary destinations ranging from the Mediterranean to
+        the Far East, you can sample something amazing.
+    - 2015-07-10 07:40:06.000000000 Z
+    - |
+      ---
+      description:
+      - ''
+      - Taste what’s unique in the region, and discover some gorgeous local specialities.
+        With tours worldwide to culinary destinations ranging from the Mediterranean to
+        the Far East, you can sample something amazing.
+      updated_at:
+      - 2015-07-10 07:33:26.000000000 Z
+      - 2015-07-10 07:40:06.330235000 Z
+    - 17
+  - - 18
+    - Excursion
+    - 5
+    - update
+    - '2'
+    - |
+      ---
+      id: 5
+      published: true
+      city_id: 2
+      created_at: 2015-07-10 07:34:22.000000000 Z
+      updated_at: 2015-07-10 07:34:22.000000000 Z
+      title: Cuisine Tours in Russia
+      description: Taste what’s unique in the region, and discover some gorgeous local specialities.
+        With tours worldwide to culinary destinations ranging from the Mediterranean to
+        the Far East, you can sample something amazing.
+    - 2015-07-10 07:40:13.000000000 Z
+    - |
+      ---
+      description:
+      - ''
+      - Taste what’s unique in the region, and discover some gorgeous local specialities.
+        With tours worldwide to culinary destinations ranging from the Mediterranean to
+        the Far East, you can sample something amazing.
+      updated_at:
+      - 2015-07-10 07:34:22.000000000 Z
+      - 2015-07-10 07:40:13.019938000 Z
+    - 18
+  - - 19
+    - Excursion
+    - 6
+    - update
+    - '2'
+    - |
+      ---
+      id: 6
+      published: true
+      city_id: 2
+      created_at: 2015-07-10 07:34:47.000000000 Z
+      updated_at: 2015-07-10 07:34:47.000000000 Z
+      title: Sightseeing in Russia
+      description: The best way to get under the skin of a place is to have a local show
+        you around – you can do just that, or strike out and explore places on your own.
+        Either way, you’ll make some lasting memories of wherever you visit.
+    - 2015-07-10 07:40:32.000000000 Z
+    - |
+      ---
+      description:
+      - ''
+      - The best way to get under the skin of a place is to have a local show you around
+        – you can do just that, or strike out and explore places on your own. Either way,
+        you’ll make some lasting memories of wherever you visit.
+      updated_at:
+      - 2015-07-10 07:34:47.000000000 Z
+      - 2015-07-10 07:40:32.964227000 Z
+    - 19
+  - - 20
+    - Excursion
+    - 7
+    - update
+    - '2'
+    - |
+      ---
+      id: 7
+      published: true
+      city_id: 1
+      created_at: 2015-07-10 07:35:05.000000000 Z
+      updated_at: 2015-07-10 07:35:23.000000000 Z
+      title: Sightseeing in Germany
+      description: The best way to get under the skin of a place is to have a local show
+        you around – you can do just that, or strike out and explore places on your own.
+        Either way, you’ll make some lasting memories of wherever you visit.
+    - 2015-07-10 07:40:37.000000000 Z
+    - |
+      ---
+      description:
+      - ''
+      - The best way to get under the skin of a place is to have a local show you around
+        – you can do just that, or strike out and explore places on your own. Either way,
+        you’ll make some lasting memories of wherever you visit.
+      updated_at:
+      - 2015-07-10 07:35:23.000000000 Z
+      - 2015-07-10 07:40:37.411821000 Z
+    - 20
+  - - 21
+    - Excursion
+    - 10
+    - update
+    - '2'
+    - |
+      ---
+      id: 10
+      published: true
+      city_id: 1
+      created_at: 2015-07-10 07:36:59.000000000 Z
+      updated_at: 2015-07-10 07:36:59.000000000 Z
+      title: Adventure Tour 1 day
+      description: Whatever flips your switch, you can get it full-on here – go horse riding,
+        hiking or mountain biking in wild and remote places, parasail, off-roading in a
+        4x4.
+    - 2015-07-10 07:41:15.000000000 Z
+    - |
+      ---
+      description:
+      - ''
+      - Whatever flips your switch, you can get it full-on here – go horse riding, hiking
+        or mountain biking in wild and remote places, parasail, off-roading in a 4x4.
+      updated_at:
+      - 2015-07-10 07:36:59.000000000 Z
+      - 2015-07-10 07:41:15.286865000 Z
+    - 21
+  - - 22
+    - Excursion
+    - 11
+    - update
+    - '2'
+    - |
+      ---
+      id: 11
+      published: true
+      city_id: 1
+      created_at: 2015-07-10 07:37:26.000000000 Z
+      updated_at: 2015-07-10 07:37:26.000000000 Z
+      title: Adventure Tour 1 week
+      description: Whatever flips your switch, you can get it full-on here – go horse riding,
+        hiking or mountain biking in wild and remote places, parasail, off-roading in a
+        4x4.
+    - 2015-07-10 07:41:20.000000000 Z
+    - |
+      ---
+      description:
+      - ''
+      - Whatever flips your switch, you can get it full-on here – go horse riding, hiking
+        or mountain biking in wild and remote places, parasail, off-roading in a 4x4.
+      updated_at:
+      - 2015-07-10 07:37:26.000000000 Z
+      - 2015-07-10 07:41:20.563742000 Z
+    - 22
+  - - 23
+    - Excursion
+    - 12
+    - update
+    - '2'
+    - |
+      ---
+      id: 12
+      published: true
+      city_id: 1
+      created_at: 2015-07-10 07:37:45.000000000 Z
+      updated_at: 2015-07-10 07:37:45.000000000 Z
+      title: Adventure Tour 3 days
+      description: Whatever flips your switch, you can get it full-on here – go horse riding,
+        hiking or mountain biking in wild and remote places, parasail, off-roading in a
+        4x4.
+    - 2015-07-10 07:41:24.000000000 Z
+    - |
+      ---
+      description:
+      - ''
+      - Whatever flips your switch, you can get it full-on here – go horse riding, hiking
+        or mountain biking in wild and remote places, parasail, off-roading in a 4x4.
+      updated_at:
+      - 2015-07-10 07:37:45.000000000 Z
+      - 2015-07-10 07:41:24.038851000 Z
+    - 23
+  - - 24
+    - Excursion
+    - 8
+    - update
+    - '2'
+    - |
+      ---
+      id: 8
+      published: false
+      city_id: 3
+      created_at: 2015-07-10 07:35:55.000000000 Z
+      updated_at: 2015-07-10 07:35:55.000000000 Z
+      title: Flightseeing in the USA
+      description: Take a helicopter or light plane across landscapes including glaciers
+        and ice fields, national parks, waterfalls and see things in a new way. Some flight
+        seeing excursions also include adventure activities like fly fishing, wilderness
+        walks and dog sledding.
+    - 2015-07-10 07:43:16.000000000 Z
+    - |
+      ---
+      description:
+      - ''
+      - Take a helicopter or light plane across landscapes including glaciers and ice fields,
+        national parks, waterfalls and see things in a new way. Some flight seeing excursions
+        also include adventure activities like fly fishing, wilderness walks and dog sledding.
+      updated_at:
+      - 2015-07-10 07:35:55.000000000 Z
+      - 2015-07-10 07:43:16.077758000 Z
+    - 24
+  - - 25
+    - Excursion
+    - 9
+    - update
+    - '2'
+    - |
+      ---
+      id: 9
+      published: false
+      city_id: 3
+      created_at: 2015-07-10 07:36:28.000000000 Z
+      updated_at: 2015-07-10 07:36:28.000000000 Z
+      title: Cuisine Tours in the USA
+      description: Taste what’s unique in the region, and discover some gorgeous local specialities.
+        With tours worldwide to culinary destinations ranging from the Mediterranean to
+        the Far East, you can sample something amazing.
+    - 2015-07-10 07:43:37.000000000 Z
+    - |
+      ---
+      description:
+      - ''
+      - Taste what’s unique in the region, and discover some gorgeous local specialities.
+        With tours worldwide to culinary destinations ranging from the Mediterranean to
+        the Far East, you can sample something amazing.
+      updated_at:
+      - 2015-07-10 07:36:28.000000000 Z
+      - 2015-07-10 07:43:37.974910000 Z
+    - 25

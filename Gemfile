@@ -7,6 +7,7 @@ gem 'enumerate_it'
 
 # DB
 gem 'mysql2'
+gem 'yaml_db'
 
 # Assets
 gem 'haml'
